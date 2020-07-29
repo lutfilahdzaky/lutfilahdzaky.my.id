@@ -1,0 +1,497 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Lutfilah Dzaky (LutfilahDz) Home">
+    <meta property="og:title" content="LutfilahDz | Home">
+    <meta property="og:description" content="Lutfilah Dzaky (LutfilahDz) Home">
+    <meta property="og:site_name" content="LutfilahDz | Home">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Lutfilah Dzaky (LutfilahDz)</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../images/lutfilahdzaky.jpg">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Lutfilah Dzaky">
+    <link rel="apple-touch-icon-precomposed" href="../images/lutfilahdzaky.jpg">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../images/lutfilahdzaky.jpg">
+    <meta name="msapplication-TileColor" content="#3372DF">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://getmdl.io/assets/main.css">
+    <link rel="stylesheet" href="https://getmdl.io/material.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+</head>
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base noselect">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row" id="my_photo_profile">
+                <img class="my-api-image" id="rqlogo" src="https://media.giphy.com/media/M9eO5ajwszObC/giphy.gif"
+                    alt="LutfilahDzaky" style="width:150px;height:150px;border-radius: 20px;padding: 2px;">
+                <h3>Lutfilah Dzaky</h3>
+                <script>
+                    const username = 'lutfilahdzaky'
+                    fetch('https://api.codetabs.com/v1/proxy?quest=https://t.me/' + username)
+                        .then(async (res) => {
+                            const text = await res.text()
+                            const photo = /class="tgme_page_photo_image" src="(.+?)"/.exec(text)[1]
+                            document.getElementById("my_photo_profile").innerHTML =
+                                `<img class="my-api-image" id="rqlogo" src="${photo}" alt="LutfilahDzaky" style="width:150px;height:150px;border-radius: 20px;padding: 2px;"><h3>Lutfilah Dzaky</h3>`
+                        })
+                </script>
+            </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                <a href="#" class="mdl-layout__tab is-active">HOME</a>
+                <a href="../donations/" class="mdl-layout__tab">DONATIONS</a>
+                <a href="https://youtube.com/lutfilahdz" class="mdl-layout__tab">YOUTUBE</a>
+                <a href="https://discord.gg/pS8yMsp" class="mdl-layout__tab">DISCORD</a>
+                <a href="../about/" class="mdl-layout__tab">ABOUT ME</a>
+            </div>
+        </header>
+        <main class="mdl-layout__content">
+            <div class="mdl-layout__tab-panel is-active" id="home">
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+
+                    <div class="news-tracker-wrap">
+                        <h6>LD PUBGM v8-beta is avaiable! <a href="#injector">Check it now</a></h6>
+                    </div>
+
+                    <div class="mdl-cell--12-col">
+                        <!-- Game Injector -->
+                        <div>
+                            <h4><a id="injector" style="color: #616161 !important"><i class="fab fa-android"></i> My
+                                    Game
+                                    Injector</a></h4>
+                            <ul>
+                                <ul>
+                                    <div>
+                                        <ul class="collapsible popout">
+                                            <li>
+                                                <div class="collapsible-header"><i
+                                                        class="material-icons">cloud_download</i>PUBG MOBILE</div>
+                                                <div class="collapsible-body"><span>
+                                                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                            target="_blank"
+                                                            href="https://play.google.com/store/apps/details?id=com.tencent.ig"><i
+                                                                class="material-icons">cloud_download</i>&nbsp; Install
+                                                            PUBG MOBILE
+                                                            on Playstore</a><br><br>
+                                                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                            target="_blank" href="https://github.com/lutfilahdzaky"><i
+                                                                class="material-icons">cloud_download</i>&nbsp;
+                                                            Download the latest version</a><br><br>
+                                                        <table>
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Build</th>
+                                                                    <th>Version</th>
+                                                                    <th>Date</th>
+                                                                    <th>Size</th>
+                                                                    <th>Status</th>
+                                                                    <th>Download</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LD PUBGM_8.0-beta.apk</th>
+                                                                    <td>8.0 | <b style="color: orange;">BETA</b></td>
+                                                                    <td>Sat, 25 Jul 2020</td>
+                                                                    <td>5.11MB</td>
+                                                                    <td style="color:green;">Working</td>
+                                                                    <td><s>Drive</s> |
+                                                                        <s>Mediafire</s> | <s>Telegram</s></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LD PUBGM_7.0.apk</th>
+                                                                    <td>7.0 | <b style="color: green;">STABLE</b></td>
+                                                                    <td>Tue, 12 May 2020</td>
+                                                                    <td>6.53MB</td>
+                                                                    <td style="color:orange;">Use Own Your Risk</td>
+                                                                    <td><s>Drive</s> | <a target="_blank"
+                                                                            href="https://bit.ly/LDPUBGMV7">Mediafire</a>
+                                                                        | <a target="_blank"
+                                                                            href="https://t.me/lutfilahdz/1044">Telegram</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LD PUBGM_6.0.apk</th>
+                                                                    <td>6.0 | <b style="color: green;">STABLE</b></td>
+                                                                    <td>Thu, 16 Apr 2020</td>
+                                                                    <td>6.03MB</td>
+                                                                    <td style="color:orange;">Use Own Your Risk</td>
+                                                                    <td><s>Drive</s> | <a target="_blank"
+                                                                            href="https://bit.ly/LDPUBGMV6">Mediafire</a>
+                                                                        | <a target="_blank"
+                                                                            href="https://t.me/lutfilahdz/1032">Telegram</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LD PUBGM_5.0.apk</th>
+                                                                    <td>5.0 | <b style="color: green;">STABLE</b></td>
+                                                                    <td>Mon, 16 Mar 2020</td>
+                                                                    <td>7.53MB</td>
+                                                                    <td style="color:red;">Not Working</td>
+                                                                    <td><s>Drive</s> | <a target="_blank"
+                                                                            href="http://bit.ly/LDPUBGMV5">Mediafire</a>
+                                                                        | <a target="_blank"
+                                                                            href="https://t.me/lutfilahdz/1007">Telegram</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LD PUBGM_4.0.apk</th>
+                                                                    <td>4.0 | <b style="color: green;">STABLE</b></td>
+                                                                    <td>Sun, 1 Mar 2020</td>
+                                                                    <td>7.46MB</td>
+                                                                    <td style="color:red;">Not Working</td>
+                                                                    <td><s>Drive</s> | <a target="_blank"
+                                                                            href="http://bit.ly/LDPUBGV4">Mediafire</a>
+                                                                        | <a target="_blank"
+                                                                            href="https://t.me/lutfilahdz/993">Telegram</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LD PUBGM V3.0.apk</th>
+                                                                    <td>3.0 | <b style="color: green;">STABLE</b></td>
+                                                                    <td>Sat, 15 Feb 2020</td>
+                                                                    <td>6.96MB</td>
+                                                                    <td style="color:red;">Not Working</td>
+                                                                    <td><s>Drive</s> | <a target="_blank"
+                                                                            href="http://bit.ly/LDPUBGMV3">Mediafire</a>
+                                                                        | <a target="_blank"
+                                                                            href="https://t.me/lutfilahdz/969">Telegram</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LutfilahDz PUBGM V2.0.apk</th>
+                                                                    <td>2.0 | <b style="color: green;">STABLE</b></td>
+                                                                    <td>Thu, 30 Jan 2020</td>
+                                                                    <td>6.74MB</td>
+                                                                    <td style="color:red;">Not Working</td>
+                                                                    <td><s>Drive</s> | <s>Mediafire</s> | <a
+                                                                            target="_blank"
+                                                                            href="https://t.me/lutfilahdz/920">Telegram</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>LutfilahDz PUBGM v1.0.0-beta.apk</th>
+                                                                    <td>1.0 | <b style="color: orange;">BETA</b></td>
+                                                                    <td>Sun, 26 Jan 2020</td>
+                                                                    <td>5.99MB</td>
+                                                                    <td style="color:red;">Not Working</td>
+                                                                    <td><s>Drive</s> | <s>Mediafire</s> | <a
+                                                                            target="_blank"
+                                                                            href="https://t.me/lutfilahdz/905">Telegram</a>
+                                                                    </td>
+                                                                </tr>
+                                                            </thead>
+                                                        </table>
+                                                    </span></div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i
+                                                        class="material-icons">cloud_download</i>PUBG MOBILE LITE</div>
+                                                <div class="collapsible-body"><span>
+                                                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                            target="_blank" href="https://github.com/lutfilahdzaky"><i
+                                                                class="fab fa-github-alt"></i>&nbsp;
+                                                            Download From GitHub Release</a><br><br>
+                                                    </span></div>
+                                            </li>
+                                            <li>
+                                                <div class="collapsible-header"><i
+                                                        class="material-icons">cloud_download</i>Call of Duty®: Mobile -
+                                                    Garena</div>
+                                                <div class="collapsible-body"><span>
+                                                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                            target="_blank" href="https://github.com/lutfilahdzaky"><i
+                                                                class="fab fa-github-alt"></i>&nbsp;
+                                                            Download From GitHub Release</a><br><br>
+                                                    </span></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </ul>
+                        </div>
+                            <!-- Telegram bots -->
+                            <div>
+                                <h4><a id="tgbot" style="color: #616161 !important"><i class="fab fa-telegram"></i> My
+                                        Telegram Bots</a></h4>
+                                <ul>
+                                    <ul>
+                                        <div>
+                                            <ul class="collapsible popout">
+                                                <li>
+                                                    <div class="collapsible-header"><i
+                                                            class="material-icons">person_pin</i>Rikka - Group
+                                                        Manager Bot</div>
+                                                    <div class="collapsible-body"><span>
+                                                            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                                target="_blank" href="https://t.me/RikkaTakanashiBot"><i
+                                                                    class="fab fa-telegram"></i>&nbsp; Check on
+                                                                Telegram</a><br><br>
+                                                        </span></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <!-- Telegram Channel -->
+                            <div>
+                                <h4><a id="tgchannel" style="color: #616161 !important"><i class="fab fa-telegram"></i>
+                                        My Telegram Channels</a></h4>
+                                <ul>
+                                    <ul>
+                                        <div>
+                                            <ul class="collapsible popout">
+                                                <li>
+                                                    <div class="collapsible-header"><i
+                                                            class="material-icons">notifications_active</i>LutfilahDz
+                                                        Official</div>
+                                                    <div class="collapsible-body"><span>
+                                                            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                                target="_blank" href="https://t.me/LutfilahDz"><i
+                                                                    class="fab fa-telegram"></i>&nbsp; Follow on
+                                                                Telegram</a><br><br>
+                                                            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                                target="_blank" href="https://t.me/s/LutfilahDz"><i
+                                                                    class="fab fa-chrome"></i>&nbsp; Open with your
+                                                                Browser</a><br><br>
+                                                        </span></div>
+                                                </li>
+                                                <li>
+                                                    <div class="collapsible-header"><i
+                                                            class="material-icons">cloud_download</i>AndLua+ Indonesia
+                                                    </div>
+                                                    <div class="collapsible-body"><span>
+                                                            <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                                target="_blank" href="https://t.me/AndLuaID"><i
+                                                                    class="fab fa-telegram"></i>&nbsp; Follow on
+                                                                Telegram</a><br><br>
+                                                        </span>
+                                                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored"
+                                                            target="_blank" href="https://t.me/s/AndLuaID"><i
+                                                                class="fab fa-chrome"></i>&nbsp; Open with your
+                                                            Browser</a>
+                                                        <br>
+                                                        <br>
+                                                        </span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <!-- Server Game -->
+                            <div>
+                                <h4><a id="games" style="color: #616161 !important"><i class="fa fa-gamepad"></i> My
+                                        Games Server</a></h4>
+                                <ul>
+                                    <ul>
+                                        <div>
+                                            <ul class="collapsible popout">
+                                                <li>
+                                                    <div class="collapsible-header"><i
+                                                            class="material-icons">games</i>Minecraft Java</div>
+                                                    <div class="collapsible-body"><span>
+                                                            <table>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Server Status</th>
+                                                                        <td style="color:green;">Online</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server IP Address</th>
+                                                                        <td>mc.lutfilahdz.my.id</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Players</th>
+                                                                        <td><strong id="demo"></strong>/500(lobby)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Version</th>
+                                                                        <td>1.8 - 1.16.1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Uptime</th>
+                                                                        <td style="color:green;">99%</td>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </span></div>
+                                                </li>
+                                                <li>
+                                                    <div class="collapsible-header"><i
+                                                            class="material-icons">games</i>Minecraft Bedrock</div>
+                                                    <div class="collapsible-body"><span>
+                                                            <table>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Server Status</th>
+                                                                        <td style="color:orange;">Maintenance</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server IP Address</th>
+                                                                        <td>pe.lutfilahdz.my.id</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Players</th>
+                                                                        <td style="color:orange;">Maintenance</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Version</th>
+                                                                        <td>1.16.1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Uptime</th>
+                                                                        <td style="color:green;">100%</td>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </span></div>
+                                                </li>
+                                                <li>
+                                                    <div class="collapsible-header"><i
+                                                            class="material-icons">games</i>Counter-Strike: Global
+                                                        Offensive</div>
+                                                    <div class="collapsible-body"><span>
+                                                            <table>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Server Status</th>
+                                                                        <td style="color:red;">Offline(last online 1year
+                                                                            ago)</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server IP Address</th>
+                                                                        <td>csgo.lutfilahdz.my.id</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Players</th>
+                                                                        <td>Offline</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Version</th>
+                                                                        <td>Offline</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>Server Uptime</th>
+                                                                        <td>Offline</td>
+                                                                    </tr>
+                                                                </thead>
+                                                            </table>
+                                                        </span></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+            </div>
+            <br>
+            <br>
+            <footer class="page-footer mdl-color--grey-900">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12">
+                            <h5 class="white-text">Like my work? Consider donating to help me continue!</h5>
+                            <p>
+                                <form action="https://www.paypal.me/lutfilahdz" target="_top">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                                        name="submit"><i class="zmdi zmdi-paypal"></i><a class="white-text">&nbsp;
+                                            Donate via PayPal</a></button>
+                                </form>
+                            </p>
+                        </div>
+                        <div class="col l4 offset-l2 s12">
+                            <h5 class="white-text">Links</h5>
+                            <ul>
+                                <li><a target="_blank" href="https://forum.xda-developers.com/member.php?u=9986147"
+                                        title="XDA" class="mdl-color-text--white" role="button"><i
+                                            class="fab fa-dev"></i> XDA</a></li>
+                                <li><a target="_blank" href="https://github.com/lutfilahdzaky" title="GitHub"
+                                        class="mdl-color-text--white" role="button"><i class="fab fa-github"></i>
+                                        GitHub</a></li>
+                                <li><a target="_blank" href="https://facebook.com/lutfilahdzaky" title="Facebook"
+                                        class="mdl-color-text--white " role="button"><i class="fab fa-facebook"></i>
+                                        Facebook</a></li>
+                                <li><a target="_blank" href="https://telegram.me/lutfilahdzaky" title="Telegram"
+                                        class="mdl-color-text--white" role="button"><i class="fab fa-telegram"></i>
+                                        Telegram</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright mdl-color--grey-900">
+                    <div class="container">
+                        Copyright &copy; 2020 Lutfilah Dzaky - Template By&nbsp;<a target="_blank"
+                            href="https://github.com/AyraHikari">Ayra Hikari</a> - Powered by&nbsp;<a target="_blank"
+                            href="https://getmdl.io/">Material Design Lite</a> and&nbsp;<a target="_blank"
+                            href="https://materializecss.com">MaterializeCSS</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+    <script>
+        var x = Math.floor(Math.random() * 100) + 90;
+        document.getElementById("demo").innerHTML = x;
+    </script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
+</body>
+
+</html>

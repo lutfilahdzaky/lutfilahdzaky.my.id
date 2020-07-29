@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lutfilah Dzaky</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/floatmenu.css">
+    <link rel="shortcut icon" href="../images/lutfilahdzaky.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Floating Menu -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="particles-js">
+        <div class="main-content">
+            <figure>
+                <div id="my_photo_profile">
+                    <img class="my-api-image" src="https://www.ngahr.com/wp-content/uploads/2018/11/ajax-spinner.gif"
+                        alt="Lutfilah Dzaky" style="border-radius: 50%; width: 192px; height: 192px;">
+                    <script>
+                        const username = 'lutfilahdzaky'
+                        fetch('https://api.codetabs.com/v1/proxy?quest=https://t.me/' + username)
+                            .then(async (res) => {
+                                const text = await res.text()
+                                const photo = /class="tgme_page_photo_image" src="(.+?)"/.exec(text)[1]
+                                document.getElementById("my_photo_profile").innerHTML =
+                                    `<img class="my-api-image" src="${photo}" alt="Lutfilah Dzaky" style="border-radius: 50%; width: 192px; height: 192px;">`
+                            })
+                    </script>
+                </div>
+            </figure>
+            <h1>Lutfilah Dzaky</h1>
+            <h2>@lutfilahdzaky</h2>
+            <ul class="social">
+                <li><a href="https://youtube.com/lutfilahdz" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://discord.gg/pS8yMsp" target="_blank"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://t.me/lutfilahdzaky" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                <li><a href="https://instagram.com/lutfilahdzaky" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/lutfilahdzaky" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://github.com/lutfilahdzaky" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://forum.xda-developers.com/member.php?u=9986147" target="_blank">XDA</a></li>
+            </ul>
+        </div>
+        <footer id="footer">
+            Copyright &copy; 2020 Lutfilah Dzaky - Template By&nbsp;<a target="_blank"
+                href="https://github.com/AyraHikari">Ayra Hikari</a>
+        </footer>
+
+    </div>
+
+    <!-- Particles Script-->
+    <script src="../js/particles.js"></script>
+    <script src="../js/app.js"></script>
+
+    <!-- Floating Menu Script -->
+    </div>
+    <div id='ss_menu'>
+        <div onclick="myhref('https://www.facebook.com/lutfilahdzaky');"> <i class="fa fa-facebook-official"></i> </div>
+        <div onclick="myhref('https://t.me/lutfilahdzaky');"> <i class="fab fa-telegram"></i> </div>
+        <div onclick="myhref('https://www.linkedin.com/in/lutfilahdzaky/');"> <i class="fa fa-linkedin"></i> </div>
+        <div onclick="myhref('../home/');"> <i class="fa fa-home"></i> </div>
+        <div class='menu'>
+            <div class='share' id='ss_toggle' data-rot='180'>
+                <div class='circle'></div>
+                <div class='bar'></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function (ev) {
+            var toggle = $('#ss_toggle');
+            var menu = $('#ss_menu');
+            var rot;
+
+            $('#ss_toggle').on('click', function (ev) {
+                rot = parseInt($(this).data('rot')) - 180;
+                menu.css('transform', 'rotate(' + rot + 'deg)');
+                menu.css('webkitTransform', 'rotate(' + rot + 'deg)');
+                if ((rot / 180) % 2 == 0) {
+                    //Moving in
+                    toggle.parent().addClass('ss_active');
+                    toggle.addClass('close');
+                } else {
+                    //Moving Out
+                    toggle.parent().removeClass('ss_active');
+                    toggle.removeClass('close');
+                }
+                $(this).data('rot', rot);
+            });
+
+            menu.on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+                if ((rot / 180) % 2 == 0) {
+                    $('#ss_menu div i').addClass('ss_animate');
+                } else {
+                    $('#ss_menu div i').removeClass('ss_animate');
+                }
+            });
+
+        });
+    </script>
+
+    <script type="text/javascript">
+        function myhref(web) {
+            window.location.href = web;
+        }
+    </script>
+</body>
+
+</html>
